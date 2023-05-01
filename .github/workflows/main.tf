@@ -5,4 +5,4 @@ resource "aws_s3_bucket" "wiz" {
   versioning {
     enabled = false
   }
-}
+} 
