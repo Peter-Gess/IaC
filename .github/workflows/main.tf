@@ -3,6 +3,6 @@ resource "aws_s3_bucket" "wiz" {
   acl    = "private"
 
   versioning {
-    enabled = true
+    enabled = true 
   }
 }
