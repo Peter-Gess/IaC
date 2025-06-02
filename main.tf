@@ -1,7 +1,10 @@
-resource "aws_s3_bucket" "wiz" {
+resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-tf-test-bucket"
+}
 
+resource "aws_s3_bucket_versioning" "my_bucket_versioning" {
+  bucket = my-tf-test-bucket.bucket
   versioning_configuration {
     status = "Enabled"
   }
-} 
+}
